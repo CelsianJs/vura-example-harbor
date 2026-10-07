@@ -45,7 +45,7 @@ Semantic headings/landmarks; skip link; labeled native selects; keyboard buttons
 
 ## Interaction states
 
-Loading disables conflicting writes. Empty shows no private workspace. Storage failures return 503 and no success fallback. Version conflicts refresh the snapshot and retain an actionable error. Success means the server accepted and persisted the mutation. 
+Loading disables conflicting writes. Empty shows no private workspace. Storage failures return 503 and no success fallback. Version conflicts refresh the snapshot and retain an actionable error. Success means the server accepted and persisted the mutation.
 
 ## Content voice
 
@@ -59,4 +59,3 @@ What 0.13.10, Vura 0.8.3, Celsian 0.6.5; no React or new design system. Client s
 
 - Hosted database/role approval and final runtime origin are operator-owned prerequisites.
 - Original starter visual work is concurrent; selectively sync public/styles.css and App.jsx after verification without overwriting backend security.
-

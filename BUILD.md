@@ -18,7 +18,7 @@ Cloudflare ingress/R2 static delivery and provider-backed Function/Dedicated exe
 
 ## Source seams
 
-`security.js` owns exact Origin, HttpOnly cookie, timing-safe CSRF and honest errors. `service.js` recovers expired cookies server-side without reusing the expired workspace. `domain.js` bounds enums/revisions. `store.js` parameterizes SQL through the existing Neon HTTP driver 1.1.0. `_hooks.ts` limits raw/cloned request bytes before Celsian parsing, including chunked whitespace; this compensates locally for Vura 0.8.3 not exposing createApiApp bodyLimit. 
+`security.js` owns exact Origin, HttpOnly cookie, timing-safe CSRF and honest errors. `service.js` recovers expired cookies server-side without reusing the expired workspace. `domain.js` bounds enums/revisions. `store.js` parameterizes SQL through the existing Neon HTTP driver 1.1.0. `_hooks.ts` limits raw/cloned request bytes before Celsian parsing, including chunked whitespace; this compensates locally for Vura 0.8.3 not exposing createApiApp bodyLimit.
 
 ## Atomicity and bounded admission
 

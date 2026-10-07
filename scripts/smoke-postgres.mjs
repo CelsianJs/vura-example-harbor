@@ -53,7 +53,7 @@ try {
  await row.getByText('revision 2',{exact:false}).waitFor();
  const second=await context.newPage();watch(second);await second.goto(base);
  await second.locator('[data-item-id="'+item.id+'"]').getByText('revision 2',{exact:false}).waitFor();
- 
+
  await page.getByLabel(item.title+' '+key).selectOption(item[key]);
  await row.getByText('revision 3',{exact:false}).waitFor();
  await second.getByRole('button',{name:'Refresh from server'}).click();

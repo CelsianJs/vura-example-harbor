@@ -95,4 +95,3 @@ export function ownerLoadRows(rows) {
     .map(([owner, count]) => ({ owner, count, share: count / max }))
     .sort((a, b) => b.count - a.count || a.owner.localeCompare(b.owner));
 }
-

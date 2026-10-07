@@ -60,6 +60,6 @@ test('real disposable PostgreSQL: HTTP ownership, CSRF, versions, atomic audit a
   assert.notEqual(recovered.headers.get('set-cookie').split(';')[0],b.cookie);
   const fresh={cookie:recovered.headers.get('set-cookie').split(';')[0],csrf:(await recovered.json()).csrfToken};
   assert.equal((await snapshot(fresh)).items.length,seed.length);
-  
+
  }finally{if(app)await app.close();await pg.close();}
 });
